@@ -3,7 +3,7 @@ html, body {
 }
 body {
 	width: 100%;
-	background: #722e39;
+	background: #041f3d;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
@@ -11,10 +11,10 @@ body {
 	position: absolute;
 	z-index: 2000;
 	width: 235px;
-	top: 50px;
+	top: 30px;
 }
 #header h1{
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: 400;
 	text-transform: uppercase;
 	color: rgba(255,255,255,0.9);
@@ -52,9 +52,17 @@ body {
 	padding-bottom: 30px;
 }
 .content h2{
-	font-size: 110px;
+	font-size: 75px;
 	padding: 10px 0px 20px 0px;
-	margin-top: 52px;
+	margin-top: 30px;
+	color: #fff;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+.content h3{
+	font-size: 40px;
+	padding: 0px 0px 0px 0px;
+	margin-top: 40px;
 	color: #fff;
 	color: rgba(255,255,255,0.9);
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
@@ -65,10 +73,56 @@ body {
 	line-height: 24px;
 	color: #fff;
 	display: inline-block;
-	background: black;
+	background: ; /*Optional text borders*/
 	padding: 10px;
 	margin: 3px 0px;
+	width: 60%;
 }
+.content2{
+	right: 55%;
+	left: 280px;
+	top: 200px;
+	position: absolute;
+	padding-bottom: 30px;
+}
+.content2 p{ /*--white box--*/
+	font-size: 20px;
+	padding: 10px;
+	line-height: 24px;
+	color: #fff;
+	display: inline-block;
+	background: ; /*Change to black if needed*/
+	padding: 10px;
+	margin: 3px 0px;
+	width: 100%;
+}
+.image1{
+	float: right;
+	padding-top: 290px;
+	padding-right:650px;
+	
+}
+.image2{
+	float: right;
+	padding-top: 450px;
+	padding-right:175px;
+	
+}
+.image3{
+	float: right;
+	padding-top: 490px;
+	padding-right:200px;
+	
+}
+
+.dam{
+	float: right;
+	padding-top: 300px;
+	padding-right:175px;
+	
+}
+
+
 .panel1{
 	width: 100%;
 	min-height: 100%;
@@ -85,7 +139,7 @@ body {
 }
 .panel1:target{
 	margin-left: 0%;
-	background-color: #463297;  /*Panel Colors*/
+	background-color: #165751;  /*Panel Colors*/
 }
 
 
@@ -105,7 +159,7 @@ body {
 }
 .panel2:target{
 	margin-left: 0%;
-	background-color: #324a93;  /*Panel Colors*/
+	background-color: #0b2e41;  /*Panel Colors*/
 }
 
 
@@ -125,7 +179,7 @@ body {
 }
 .panel3:target{
 	margin-left: 0%;
-	background-color: #77329c;  /*Panel Colors*/
+	background-color: #448c61;  /*Panel Colors*/
 }
 
 
@@ -146,16 +200,87 @@ body {
 }
 .panel4:target{
 	margin-left: 0%;
-	background-color: #4c1720;  /*Panel Colors*/
+	background-color: #9ac16d;  /*Panel Colors*/
+}
+
+.button a{ /*PDF Button*/
+	position: absolute;
+	
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+	background-color:#57c59d;
+	border-radius:50%;
+	z-index: 2;
+	width: 100px;
+	padding: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	-webkit-transition: all 200ms ;
+	-moz-transition: all 200ms ;
+	-ms-transition: all 200ms ;
+	-o-transition: all 200ms ;
+	transition: all 200ms ;
+}
+
+.button a:hover {
+	background-color:#207455;
+}
+
+.button2 a{ /*Submit Button*/
+	position: absolute;
+	right: 40px;
+	left: 195px;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+	background-color:#599f73;
+	border-radius:50%;
+	z-index: 2;
+	width: 100px;
+	padding: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	-webkit-transition: all 200ms ;
+	-moz-transition: all 200ms ;
+	-ms-transition: all 200ms ;
+	-o-transition: all 200ms ;
+	transition: all 200ms ;
+}
+
+.button2 a:hover {
+	background-color:#3a7b53;
+}
+
+
+/*
+* Form, input, label, textarea
+*/
+.form h3, .form p {text-align: center;}
+form {width: 500px; margin: 50px auto; text-align: center;}
+input, label, textarea {width: 500px; float: left; margin: 0; padding: 0;}
+label {font-size: 12px; text-transform: uppercase; font-weight: 300; margin-bottom: 7px;}
+input {margin-bottom: 2px; padding: 7px 0; text-align: center;
+}
+input, textarea {border: 1px solid #ddd; outline: none;
+}
+input:focus, textarea:focus {border-color: #b6b6b6;
+}
+textarea {width: 480px; padding: 7px 10px;}
+input.error, textarea.error {border-color: #cc4847;
+
 }
 #home:target ~ #header #navigation #link-home,
 #exhibit:target ~ #header #navigation #link-exhibit,
 #about:target ~ #header #navigation #link-about,
 #venue:target ~ #header #navigation #link-venue,
 #contact:target ~ #header #navigation #link-contact{
-	background: #000;
+	background: #6b52db;
 	color: #fff;
 }
+
 #works {
 	padding: 15px 0px;
 }
@@ -167,26 +292,26 @@ body {
 }
 #works img {
 	box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-	padding: 12px; 
-	background: rgba(255,255,255,0.9);
+	
 }
 #form p{
-	background: #fff;
-	color: #000;
+	background: #599f73;
+	color: #fff;
 }
 #form input, #form textarea{
-	background: #000;
-	color: #fff;
+	background: #fff;
+	color: #000;
 	border: none;
 }
 #form textarea{
-	width: 493px;
+	width: 480px;
 	height: 100px;
 }
 #form label{
 	padding-right: 10px;
 	float: left;
 }
+
 .footnote a{
 	color: #ddd;
 }
